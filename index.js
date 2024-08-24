@@ -10,7 +10,7 @@ const app = express();
 // Define CORS options
 const corsOptions = {
   credentials: true,
-  origin: '*', // Ensure this matches the frontend URL
+  origin: 'https://shipmnts-backend-three.vercel.app', 
 };
 
 // Use CORS middleware
