@@ -8,13 +8,17 @@ DbConnect(); // Call your DbConnect function
 const app = express();
 
 // Define CORS options
-const corsOptions = {
-  credentials: true,
-  origin: "*"
-};
+// const corsOptions = {
+//   credentials: true,
+//   origin: "*"
+// };
 
 // Use CORS middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://shipmnts-frontend.vercel.app', // Allow only this origin
+  methods: 'GET,POST,PUT,DELETE', // Allowed methods
+  allowedHeaders: 'Content-Type,Authorization', // Allowed headers
+}));
 
 
 // Middleware
