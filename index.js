@@ -10,12 +10,11 @@ const app = express();
 // Define CORS options
 const corsOptions = {
   credentials: true,
-  origin: "https://shipmnts-frontend.vercel.app/"
+  origin: "*"
 };
 
 // Use CORS middleware
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions));
+app.use(cors());
 
 
 // Middleware
