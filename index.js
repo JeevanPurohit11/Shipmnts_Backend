@@ -10,7 +10,7 @@ const app = express();
 // Define CORS options
 const corsOptions = {
   credentials: true,
-  origin: 'http://localhost:3000', // Ensure this matches the frontend URL
+  origin: '*', // Ensure this matches the frontend URL
 };
 
 // Use CORS middleware
