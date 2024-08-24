@@ -7,7 +7,7 @@ const BookController = require('../controllers/bookController');
 const upload = multer({ dest: 'uploads/' });
 
 // Define routes
-router.post('/api/upload', upload.single('file'), BookController.uploadFile);
-router.get('/api/books', BookController.getBooks);
+router.post('/upload', upload.single('file'), BookController.uploadFile);
+router.get('/books', BookController.getBooks);
 
 module.exports = router;
