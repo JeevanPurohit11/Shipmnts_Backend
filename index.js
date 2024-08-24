@@ -10,7 +10,7 @@ const app = express();
 // Define CORS options
 const corsOptions = {
   credentials: true,
-  origin: 'https://shipmnts-frontend.vercel.app/', 
+  origin: ['https://shipmnts-frontend.vercel.app/upload', 'https://shipmnts-frontend.vercel.app/books']
 };
 
 // Use CORS middleware
