@@ -15,7 +15,7 @@ const app = express();
 
 // Use CORS middleware
 const corsOptions = {
-  origin: 'https://shipmnts-frontend.vercel.app', // Allow only this origin
+  origin: ["https://shipmnts-frontend.vercel.app"], // Allow only this origin
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
   credentials: true // Allow credentials (cookies, authorization headers, etc.)
